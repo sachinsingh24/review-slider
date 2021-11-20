@@ -12,7 +12,7 @@ const Review = () => {
   useEffect(() => {
     let slide = setInterval(() => {
       setIndex(index === person.length - 1 ? 0 : index + 1);
-    }, 1000);
+    }, 4000);
     return () => clearInterval(slide);
   }, [index]);
 
